@@ -1,6 +1,6 @@
 import java.util.*;
 import java.lang.*;
-class str_sort
+class str7
 {
 	public static void main(String []args)
 	{
@@ -8,10 +8,8 @@ class str_sort
 		int i;
 		String str;
 		str=scn.nextLine();
-		String [] arr=str.split(" ");
+		char arr[]=str.toCharArray();
 		Arrays.sort(arr);
-		System.out.println("\nsorted :\n");
-		for(i=0;i<arr.length;i++)
-			System.out.print(" "+arr[i]);		
+		System.out.println(arr);
 	}
 }
