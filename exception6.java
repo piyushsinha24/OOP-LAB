@@ -1,9 +1,14 @@
 import java.io.*;
-class exception6
+class exception6 
 {
-	 public static void main(String[] args) throws FileNotFoundException
+	 public static void main(String[] args) 
 	{
-		PrintWriter pw=new PrintWriter("xyz.txt");
-		pw.println("hello world");
+		try
+		{
+		throw new NullPointerException();
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
 	}
 }
